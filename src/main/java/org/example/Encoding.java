@@ -11,4 +11,8 @@ public class Encoding {
 }public String getPlainText(){
     return this.plainText;
 }
+public static String encrypt(String plainText, int cipherKey);{
+
+        }
+
 
