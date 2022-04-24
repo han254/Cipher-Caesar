@@ -10,6 +10,6 @@ public class main {
         System.out.println("Enter Your specific key>>");
         // scanning the next token of the input as an Int.
         int cipherKey = sc.nextInt();
-        System.out.println("This is Your encrypted text>>"+Encoding.encrypting( plainText, cipherKey ));
+        System.out.println("This is Your encrypted text>>"+Encoding.encrypte( plainText, cipherKey ));
     }
 }

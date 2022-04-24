@@ -8,3 +8,6 @@ public class Decoding {
         this.cipherText = cipherText;
         this.shift = shift;
 }
+    public static String encrypte(String decrypte) {
+        return decrypte;
+    }

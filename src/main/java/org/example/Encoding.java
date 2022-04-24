@@ -15,7 +15,7 @@ public class Encoding {
     public int getShift(){
         return this.cipherKey;
     }
-    public static String encrypting(String plainText, int cipherKey ){
+    public static String encrypte(String plainText, int cipherKey ){
         String cipherText = "";
         char alphabet;
         for(int i=0; i < plainText.length();i++)
