@@ -11,5 +11,7 @@ public class main {
         // scanning the next token of the input as an Int.
         int cipherKey = sc.nextInt();
         System.out.println("This is Your encrypted text>>"+Encoding.encrypte( plainText, cipherKey ));
+        System.out.println("Here is the decrypted text>>"+Decoding.decrypte(Encoding.encrypte(plainText,cipherKey),cipherKey));
+
     }
 }

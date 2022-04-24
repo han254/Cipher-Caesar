@@ -14,7 +14,7 @@ public class Decoding {
     public static int encrypte(int decrypte) {
         return decrypte;
     }
-    public static String decrypte(String encrypte) {
+    public static String decrypte(String encrypte, int cipherKey) {
 
         return encrypte;
     }
