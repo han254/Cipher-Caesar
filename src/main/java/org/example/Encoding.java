@@ -11,10 +11,29 @@ public class Encoding {
 }public String getPlainText(){
     return this.plainText;
 }
+public int getShift(){
+    return this.cipherKey;
+
+}
+
 public static String encrypt(String plainText, int cipherKey);{
 String cipherText ="";
 char alphabet;
 for(int i=0; i<plainText.length(); i++)
+{
+    alphabet =plainText.charAt(i);
+    if(alphabet>='a' && alphabet <='z'){
+        alphabet = (char) (alphabet + cipherKey);
+        if(alphabet > 'z') {
+        alphabet = (char) (alphabet+'a'-'z'-1);
+        }
+        cipherText =cipherText + alphabet;
+        }
+    else if(
+            alphabet >='A' && alphabet<='Z'){
+    }
+        }
+        )
         }
 
 
