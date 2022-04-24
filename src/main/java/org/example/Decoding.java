@@ -27,5 +27,14 @@ public class Decoding {
     }
     public static String decrypting(String cipherText , int shift){
         String dMessage = "";
+        for(int i=0; i < cipherText.length();i++)
+
+        {
+            char alphabet = cipherText.charAt(i);
+            if(alphabet >= 'a' && alphabet <= 'z')
+            {
+
+                alphabet = (char) (alphabet - shift);
+
 
 }
