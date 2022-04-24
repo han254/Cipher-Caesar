@@ -12,7 +12,9 @@ public class Encoding {
     return this.plainText;
 }
 public static String encrypt(String plainText, int cipherKey);{
-
+String cipherText ="";
+char alphabet;
+for(int i=0; i<plainText.length(); i++)
         }
 
 
