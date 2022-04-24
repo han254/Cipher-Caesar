@@ -4,7 +4,6 @@ import java.util.*;
 public class Encoding {
     private String plainText;
     private int cipherKey;
-
     public Encoding(String plainText, int cipherKey) {
         this.plainText = plainText;
         this.cipherKey= cipherKey;
@@ -17,7 +16,7 @@ public class Encoding {
         return this.cipherKey;
     }
     public static String encrypting(String plainText, int cipherKey ){
-        String ciphertext = "";
+        String cipherText = "";
         char alphabet;
         for(int i=0; i < plainText.length();i++)
         {
@@ -28,7 +27,7 @@ public class Encoding {
                 if(alphabet > 'z') {
                     alphabet = (char) (alphabet+'a'-'z'-1);
                 }
-                ciphertext = ciphertext + alphabet;
+                cipherText= cipherText + alphabet;
             }
             else if(alphabet >= 'A' && alphabet <= 'Z') {
                 alphabet = (char) (alphabet + cipherKey);
@@ -36,13 +35,13 @@ public class Encoding {
                 if(alphabet > 'Z') {
                     alphabet = (char) (alphabet+'A'-'Z'-1);
                 }
-                ciphertext = ciphertext + alphabet;
+                cipherText = cipherText + alphabet;
             }
             else {
-                ciphertext = ciphertext + alphabet;
+                cipherText = cipherText + alphabet;
             }
 
         }
-        return ciphertext;
+        return cipherText;
     }
 }
