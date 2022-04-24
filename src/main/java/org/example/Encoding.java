@@ -8,4 +8,7 @@ public class Encoding {
         this.plainText =plainText;
         this.cipherKey =cipherKey;
     }
+}public String getPlainText(){
+    return this.plainText;
 }
+
