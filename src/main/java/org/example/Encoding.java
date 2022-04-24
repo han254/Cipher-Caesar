@@ -27,7 +27,7 @@ public class Encoding {
                 if(alphabet > 'z') {
                     alphabet = (char) (alphabet+'a'-'z'-1);
                 }
-                cipherText= cipherText + alphabet;
+                cipherText= cipherText.toUpperCase() + alphabet;
             }
             else if(alphabet >= 'A' && alphabet <= 'Z') {
                 alphabet = (char) (alphabet + cipherKey);
