@@ -36,5 +36,26 @@ public class Decoding {
 
                 alphabet = (char) (alphabet - shift);
 
+                if(alphabet < 'a') {
+                    alphabet = (char) (alphabet-'a'+'z'+1);
+                }
+                dMessage = dMessage + alphabet;
+            }
+            else if(alphabet >= 'A' && alphabet <= 'Z')
+            {
+                alphabet = (char) (alphabet - shift);
 
+                if (alphabet < 'A') {
+
+                    alphabet = (char) (alphabet-'A'+'Z'+1);
+                }
+                dMessage = dMessage + alphabet;
+            }
+            else
+            {
+                dMessage = dMessage + alphabet;
+            }
+        }
+        return dMessage;
+    }
 }
