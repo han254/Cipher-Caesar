@@ -7,5 +7,9 @@ public class main {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Enter Your plaintext message>> ");
         String plainText = sc.nextLine();
+        System.out.println("Enter Your specific key>>");
+        // scanning the next token of the input as an Int.
+        int cipherKey = sc.nextInt();
+
     }
 }
