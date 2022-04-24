@@ -11,3 +11,21 @@ public class Decoding {
     public static String encrypte(String decrypte) {
         return decrypte;
     }
+    public static int encrypte(int decrypte) {
+        return decrypte;
+    }
+    public static String decrypte(String encrypte) {
+
+        return encrypte;
+    }
+    public String getCipherText(){
+        return this.cipherText;
+    }
+
+    public int getShift(){
+        return this.shift;
+    }
+    public static String decrypting(String cipherText , int shift){
+        String dMessage = "";
+
+}
