@@ -21,21 +21,24 @@ public class Encoding {
         for(int i=0; i < plainText.length();i++)
         {
             alphabet = plainText.charAt(i);
-            if(alphabet >= 'a' && alphabet <= 'z')
-            {
-                alphabet = (char) (alphabet + cipherKey);
-                if(alphabet > 'z') {
-                    alphabet = (char) (alphabet+'a'-'z'-1);
+            if(Character.isLowerCase(alphabet)){
+                if(alphabet >= 'a' && alphabet <= 'z')
+                {
+                    alphabet = (char) (alphabet + cipherKey);
+                    if(alphabet > 'z') {
+                        alphabet = (char) (alphabet+'a'-'z'-1);
+                    }
+                    cipherText= cipherText + alphabet;
                 }
-                cipherText= cipherText.toUpperCase() + alphabet;
-            }
-            else if(alphabet >= 'A' && alphabet <= 'Z') {
-                alphabet = (char) (alphabet + cipherKey);
+            } else if (Character.isUpperCase(alphabet)) {
+                 if(alphabet >= 'A' && alphabet <= 'Z') {
+                    alphabet = (char) (alphabet + cipherKey);
 
-                if(alphabet > 'Z') {
-                    alphabet = (char) (alphabet+'A'-'Z'-1);
+                    if(alphabet > 'Z') {
+                        alphabet = (char) (alphabet+'A'-'Z'-1);
+                    }
+                    cipherText = cipherText + alphabet;
                 }
-                cipherText = cipherText + alphabet;
             }
             else {
                 cipherText = cipherText + alphabet;
