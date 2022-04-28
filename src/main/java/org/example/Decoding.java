@@ -18,8 +18,8 @@ public class Decoding {
                     cipherText= cipherText + alphabet;
                 }
             }
-          else if(Character.isUpperCase(alphabet)){
-               if(alphabet >= 'A' && alphabet <= 'Z') {
+            else if(Character.isUpperCase(alphabet)){
+                if(alphabet >= 'A' && alphabet <= 'Z') {
                     alphabet = (char) (alphabet - cipherKey);
 
                     if(alphabet > 'Z') {
